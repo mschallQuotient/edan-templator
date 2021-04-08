@@ -1,0 +1,171 @@
+.edanTitle
+{
+  position: relative;
+  text-align: center;
+}
+
+.edanTitle__image
+{
+  width: 100%;
+}
+
+.edanTitle__text
+{
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.edanTitle__white
+{
+  color: white;
+}
+
+.edanTitle__t1
+{
+  font-family: "freight-sans-pro",Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.edanTitle__t2
+{
+  font-family: "freight-text-pro",Garamond,Palatino,serif;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.edanHeader
+{
+  color: #0377fc;
+  font-family: "freight-text-pro",Garamond,Palatino,serif;
+  font-size: 2.5em;
+  padding: 0% 20% 0% 20%;
+}
+
+.edanParagraph
+{
+  font-family: "freight-text-pro",Garamond,Palatino,serif;
+  font-size: 1.25em;
+  padding: 2% 20% 2% 20%;
+}
+
+.edanImage
+{
+  padding: 2% 20% 2% 20%;
+}
+
+.edanImage__textBlock
+{
+  padding-left: 10%;
+}
+
+.edanQuote
+{
+  padding: 2% 20% 2% 20%;
+  display: block;
+}
+
+.edanQuote__blockquote
+{
+  color: gray;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.edanQuote__cite
+{
+  color: black;
+  font-size: .75em;
+}
+
+.edanQuote__cite:before
+{
+    content: '';
+    display: block;
+    background-color: black;
+    height: 2px;
+    margin: 1em auto 1em auto;
+    max-width: 300px;
+}
+
+.edanVideo
+{
+  padding: 2% 20% 2% 20%;
+}
+
+.edanVideo__frameContainer
+{
+  width: 1050px;
+  height: 650px;
+}
+
+.edanVideo__frame
+{
+  width: 100%;
+  height: 100%;
+}
+
+.edanFilmstrip
+{
+  display: block;
+}
+
+.edanFilmstrip__list
+{
+  list-style: none;
+}
+
+.edanFilmstrip__item
+{
+  display: inline;
+  float: left;
+  width: 33%;
+  padding: 4% 0% 4% 0%;
+}
+
+.edanFilmstrip__image
+{
+  width: 100%;
+}
+
+.edanLink
+{
+  padding: 2% 25% 2% 25%;
+}
+
+a.edanLink__anchor
+{
+  font-size: 2em;
+  background-color: #0f1c66;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.edanResources
+{
+  padding: 2% 20% 2% 20%;
+}
+
+.edanResources__header
+{
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 2.5em;
+}
+
+.edanResource__name
+{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.edanResources__list
+{
+  font-size: 1.5em;
+}

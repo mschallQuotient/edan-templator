@@ -1,0 +1,12 @@
+<div class="edanFilmstrip">
+  <ul class="edanFilmstrip__list">
+    {{#each imageList}}
+    <li class="edanFilmstrip__item">
+      <a href="{{{link}}}" class="edanFilmstrip__link">
+        <img src="{{{source}}}" class="edanFilmstrip__image" />
+        <div class="edanFilmstrip__caption">{{{caption}}}</div>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</div>

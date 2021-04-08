@@ -1,0 +1,29 @@
+{
+  "componentId": 0,
+  "header": "<h3>Resources</h3>",
+  "sectionList": [
+    {
+      "name": "Lost Boundaries",
+      "resourceList": [
+        "<em><a href=\"https://youtu.be/1u-YnihAzf0?t=11\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\">Lost Boundaries<span><span>(link is external)</span></span></a> </em>(full video on YouTube)&nbsp;",
+        "<a href=\"http://articles.latimes.com/1989-07-25/entertainment/ca-343_1_johnston-family\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Los Angeles Times</em> article about the Johnston family<span><span>(link is external)</span></span></a>",
+        "<a href=\"http://articles.latimes.com/1989-07-25/entertainment/ca-343_1_johnston-family\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Los Angeles Times</em> article about the Johnston family<span><span>(link is external)</span></span></a>"
+      ]
+    },
+    {
+      "name": "Colorism and Passing",
+      "resourceList": [
+        "Nadra Kareem Nittle: \"<a target=\"_blank\" href=\"https://www.thoughtco.com/what-is-colorism-2834952\">The Roots of Colorism, or Skin Tone Discrimination</a>",
+        "Gail Lukasik: \"<a target=\"_blank\"  href=\"https://www.washingtonpost.com/news/inspired-life/wp/2017/11/20/my-mother-spent-her-life-passing-as-white-discovering-her-secret-changed-my-view-of-race-and-myself/?utm_term=.e32580e0c564\">My mother spent her life passing as white. Discovering her secret changed my view of race — and myself.</a>"
+      ]
+    },
+    {
+      "name": "Early Black Films",
+      "resourceList": [
+        "<a target=\"_blank\" href=\"http://dhbasecamp.humanities.ucla.edu/afamfilm/whatis/history/\">History of Silent Race Films</a>",
+        "<a target=\"_blank\" href=\"https://www.npr.org/templates/story/story.php?storyId=5245089\">Stepin Fetchit</a>",
+        "<a target=\"_blank\" href=\"http://www.blackpast.org/aah/micheaux-oscar-1884-1951%20%C2%A0%C2%A0%C2%A0\">Oscar Micheaux</a>"
+      ]
+    }
+  ]
+}

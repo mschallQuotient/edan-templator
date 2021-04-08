@@ -1,0 +1,9 @@
+<div class="edanTitle">
+  {{#if backgroundImage}}
+   <img src="{{{backgroundImage}}}" class="edanTitle__image"/>
+  {{/if}}
+  <div class="edanTitle__text">
+    <h1 class="edanTitle__t1 {{#if backgroundImage}}edanTitle__white{{/if}}">{{title}}</h1>
+    <h2 class="edanTitle__t2 {{#if backgroundImage}}edanTitle__white{{/if}}">{{subtitle}}</h2>
+  </div>
+</div>

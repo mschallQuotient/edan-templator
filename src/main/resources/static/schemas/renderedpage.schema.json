@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/base.schema.json",
+  "title": "Base",
+  "description": "Base Schema Template",
+  "type": "object",
+  "properties": {
+    "components": {
+      "description": "List of Components to include on Page",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "componentType": {
+            "description": "The type of the component to include",
+            "type": "string"
+          },
+          "edanUrl": {
+            "description": "The EDAN object from which to draw component data",
+            "type": "string"
+          },
+          "options": {
+            "description": "Additional options specifications for component",
+            "type": "object"
+          }
+        },
+        "required": ["componentType", "edanUrl"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["components"]
+}

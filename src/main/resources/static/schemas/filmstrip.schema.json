@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/filmstrip.schema.json",
+  "title": "Filmstrip",
+  "description": "Film Strip Component Schema",
+  "type": "object",
+  "properties": {
+    "imageList": {
+      "description": "List of Image Components",
+      "type": "array",
+      "items": {
+        "$ref": "../schemas/image.schema.json"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["imageList"]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/title.schema.json",
+  "title": "Title",
+  "description": "Title Component Schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Primary Title to Display",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "Secondary Title to Display",
+      "type": "string"
+    },
+    "backgroundImage": {
+      "description": "Background Image to Display Title Against",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": ["title"]
+}

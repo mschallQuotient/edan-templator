@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/resources.schema.json",
+  "title": "Resources",
+  "description": "Resources Component Schema",
+  "type": "object",
+  "properties": {
+    "componentType": {
+      "description": "Type of the component",
+      "type": "string"
+    },
+    "header": {
+      "description": "Title For Resource Component",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
+    "sectionList": {
+      "description": "List of Resource Sections",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Name of Resource Section",
+            "type": "string"
+          },
+          "resourceList": {
+            "description": "List of Resources",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "contentMediaType": "text/html"
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["name", "resourceList"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["componentId", "sectionList"]
+}

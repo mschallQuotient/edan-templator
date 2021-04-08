@@ -1,0 +1,11 @@
+<div class="edanResources">
+  <div class="edanResources__header">{{{header}}}</div>
+  {{#each sectionList}}
+    <div class="edanResources__name">{{{name}}}</div>
+    <ul class="edanResources__list">
+    {{#each resourceList}}
+     <li class="edanResources__item">{{{this}}}</li>
+    {{/each}}
+    </ul>
+  {{/each}}
+</div>

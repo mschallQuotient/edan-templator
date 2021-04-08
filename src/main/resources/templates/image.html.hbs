@@ -1,0 +1,14 @@
+<div class="edanImage">
+  <div class="edanImage__visualBlock">
+    {{#if link}}
+      <a href="{{{link}}}" class="edanImage__link">
+        <img src="{{{source}}}" class="edanImage__img"/>
+      </a>
+    {{else}}
+      <img src="{{{source}}}" class="edanImage__img"/>
+    {{/if}}
+  </div>
+  <div class="edanImage__textBlock">
+    {{{caption}}}
+  </div>
+</div>

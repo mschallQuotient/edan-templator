@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/image.schema.json",
+  "title": "Image",
+  "description": "Image Component Schema",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "Source for Component Image",
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "caption": {
+      "description": "Caption for Component",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
+    "link": {
+      "description": "Link to External Resource",
+      "type": "string",
+      "format": "uri-reference"
+    }
+  },
+  "required": ["source"]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/paragraph.schema.json",
+  "title": "Paragraph",
+  "description": "Paragraph Component Schema Template",
+  "type": "object",
+  "properties": {
+    "content": {
+      "description": "Paragraph HTML Content",
+      "type": "string",
+      "contentMediaType": "text/html"
+    }
+  },
+  "required": ["content"]
+}

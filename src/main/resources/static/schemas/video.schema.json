@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/video.schema.json",
+  "title": "Video",
+  "description": "Video Component Schema",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "Source for Component Video",
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "caption": {
+      "description": "Caption for Component",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
+    "mediaInfo": {
+      "description": "Media Info for Video",
+      "type": "string",
+      "contentMediaType": "text/html"
+    }
+  },
+  "required": ["source"]
+}

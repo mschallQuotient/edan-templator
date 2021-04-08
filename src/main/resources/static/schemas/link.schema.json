@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/paragraph.schema.json",
+  "title": "Link",
+  "description": "Link Component Schema Template",
+  "type": "object",
+  "properties": {
+    "href": {
+      "description": "href for link tag",
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "content": {
+      "description": "HTML Content",
+      "type": "string",
+      "contentMediaType": "text/html"
+    }
+  },
+  "required": ["href", "content"]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/header.schema.json",
+  "title": "Header",
+  "description": "Header Schema Template",
+  "type": "object",
+  "properties": {
+    "text": {
+      "description": "Text For Header Section",
+      "type": "string"
+    },
+    "headerLevel":
+    {
+      "description": "Text Emphasis for Header Contents",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6
+    }
+  },
+  "required": ["componentType", "text", "headerLevel"]
+}

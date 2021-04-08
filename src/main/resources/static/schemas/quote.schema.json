@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "../schemas/quote.schema.json",
+  "title": "Quote",
+  "description": "Quote Schema Template",
+  "type": "object",
+  "properties": {
+    "quote": {
+      "description": "Content of Quote",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
+    "citation": {
+      "description": "Source of Quote along with any other relevant information",
+      "type": "string",
+      "contentMediaType": "text/html"
+    }
+  },
+  "required": ["quote"]
+}
