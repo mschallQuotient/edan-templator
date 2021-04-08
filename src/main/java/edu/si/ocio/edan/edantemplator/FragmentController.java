@@ -27,22 +27,22 @@ import java.util.Map;
 public class FragmentController {
 
     @RequestMapping("/fragment/{template}/{name}")
-    public String fragments(@PathVariable("template") String template, @PathVariable("name") String name) throws IOException {
+    public String fragments(@PathVariable("template") String templateName, @PathVariable("name") String contentName) throws IOException {
         TemplateLoader loader = new ClassPathTemplateLoader("/templates", ".hbs");
         Handlebars handlebars = new Handlebars().with(loader);
 
-        Template test = handlebars.compile(template + ".html");
+        Template template = handlebars.compile(templateName + ".html");
 
         Gson gson = new Gson();
         Type type = new TypeToken<Map<String, Object>>(){}.getType();
 
-        Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/static/json/fragments/" + template + "/" + name + ".json"));
+        Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/static/json/fragments/" + templateName + "/" + contentName + ".json"));
 
         Map<String, Object> map = gson.fromJson(reader, type);
 
         Context context = Context.newBuilder(map).build();
 
-        return test.apply(context);
+        return template.apply(context);
     }
 
 }
