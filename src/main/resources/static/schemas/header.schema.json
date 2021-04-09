@@ -12,10 +12,8 @@
     "headerLevel":
     {
       "description": "Text Emphasis for Header Contents",
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 6
+      "type": "string"
     }
   },
-  "required": ["componentType", "text", "headerLevel"]
+  "required": ["text", "headerLevel"]
 }

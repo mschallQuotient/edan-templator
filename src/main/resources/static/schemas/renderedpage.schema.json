@@ -5,6 +5,32 @@
   "description": "Base Schema Template",
   "type": "object",
   "properties": {
+    "css": {
+      "description": "list of css files to include",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri-reference"
+      }
+    },
+    "js": {
+      "description": "list of js files to include",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri-reference"
+      }
+    },
+    "htmlBefore": {
+      "description": "HTML to display before formatted EDAN content",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
+    "htmlAfter": {
+      "description": "HTML to display after formatted EDAN content",
+      "type": "string",
+      "contentMediaType": "text/html"
+    },
     "components": {
       "description": "List of Components to include on Page",
       "type": "array",

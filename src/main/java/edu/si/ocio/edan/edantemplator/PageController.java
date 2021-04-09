@@ -56,8 +56,15 @@ public class PageController
             html += template.apply(componentMap);
         }
 
+        Map<Object, Object> parameters = new HashMap<>();
+        parameters.put("css", page.get("css"));
+        parameters.put("js", page.get("js"));
+        parameters.put("htmlBefore", page.get("htmlBefore"));
+        parameters.put("htmlBefore", page.get("htmlAfter"));
+        parameters.put("content", html);
+
         Template pageTemplate = handlebars.compile("page.html");
 
-        return pageTemplate.apply(html);
+        return pageTemplate.apply(parameters);
     }
 }

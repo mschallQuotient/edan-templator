@@ -1,5 +1,4 @@
 {
-  "componentId": 0,
   "text": "This is a title",
-  "headerLevel": 1
+  "headerLevel": "h1"
 }

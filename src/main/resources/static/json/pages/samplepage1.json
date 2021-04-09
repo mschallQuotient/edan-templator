@@ -1,4 +1,8 @@
 {
+  "css": ["/css/edan-templator.css"],
+  "js": ["/js/edan-templator.js"],
+  "htmlBefore": "TEST BEFORE HTML",
+  "htmlAfter": "TEST AFTER HTML",
   "components": [
     {
       "componentType": "title",
