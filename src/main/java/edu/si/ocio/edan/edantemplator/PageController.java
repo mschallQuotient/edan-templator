@@ -53,7 +53,13 @@ public class PageController
             Type type = new TypeToken<Map<String, Object>>(){}.getType();
             Map<String, Object> componentMap = gson.fromJson(reader, type);
 
-            html += template.apply(componentMap);
+            if (page.get("componentBefore") instanceof String && page.get("componentAfter") instanceof String) {
+              html += (String) page.get("componentBefore");
+              html += template.apply(componentMap);
+              html += (String) page.get("componentAfter");
+            } else {
+              html += template.apply(componentMap);
+            }
         }
 
         Map<Object, Object> parameters = new HashMap<>();
@@ -61,6 +67,7 @@ public class PageController
         parameters.put("js", page.get("js"));
         parameters.put("htmlBefore", page.get("htmlBefore"));
         parameters.put("htmlBefore", page.get("htmlAfter"));
+        parameters.put("pageTitle", page.get("pageTitle"));
         parameters.put("content", html);
 
         String pageTemplateFile = "page.html";

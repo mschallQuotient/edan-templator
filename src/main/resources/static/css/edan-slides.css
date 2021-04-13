@@ -1,0 +1,169 @@
+/**
+ * This is messy.
+ **/
+
+/* reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+a, a.link, a.visited { color: #FFF; font-weight: 600;}
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/* core css */
+
+html, body { overflow: hidden; }
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #DA4926;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 130vh;
+  position: fixed;
+  width: 100%;
+  -webkit-transform: translateY(20vh);
+  -ms-transform: translateY(20vh);
+  transform: translateY(20vh);
+  -webkit-transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background:first-child {
+  background-color: #DA4926;
+  -webkit-transform: translateY(-10vh);
+  -ms-transform: translateY(-10vh);
+  transform: translateY(-10vh);
+}
+
+.background:first-child .content-wrapper {
+  -webkit-transform: translateY(10vh);
+  -ms-transform: translateY(10vh);
+  transform: translateY(10vh);
+}
+
+.background:nth-child(2) { background-image: url("https://nmaahc.si.edu/sites/default/files/styles/image_caption/public/images/captioned/2013_118_96_7_main_001.png?itok=iqlXaDzS"); }
+.background:nth-child(3) { background-image: url("https://nmaahc.si.edu/sites/default/files/styles/image_caption/public/images/captioned/2013_118_142_7_main_001.png?itok=fP11l4gd"); }
+.background:nth-child(4) { background-color: #612A60; }
+.background:nth-child(5) { background-image: url("https://nmaahc.si.edu/sites/default/files/styles/image_caption/public/images/captioned/2013_118_123_1_main_001.png?itok=GedLw3Lk"); }
+.background:nth-child(6) { background-image: url("https://nmaahc.si.edu/sites/default/files/styles/tile_wide/public/images/slideshow/2013_118_142_1_rotating_001.png?itok=silHCSne"); }
+.background:nth-child(7) { background-image: url("https://nmaahc.si.edu/sites/default/files/styles/tile_wide/public/images/slideshow/2013_118_117_3_rotating_001.png?itok=ujZc2F2t"); }
+.background:nth-child(8) { background-color: #612A60; }
+.background:nth-child(9) { background-color: #212121; }
+
+/* Set stacking context of slides */
+
+.background:nth-child(1) { z-index: 10; }
+.background:nth-child(2) { z-index: 9; }
+.background:nth-child(3) { z-index: 8; }
+.background:nth-child(4) { z-index: 7; }
+.background:nth-child(5) { z-index: 6; }
+.background:nth-child(6) { z-index: 5; }
+.background:nth-child(7) { z-index: 4; }
+.background:nth-child(8) { z-index: 3; }
+.background:nth-child(9) { z-index: 2; }
+.background:nth-child(10) { z-index: 1; }
+
+.content-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  color: #fff;
+  -webkit-transform: translateY(40vh);
+  -ms-transform: translateY(40vh);
+  transform: translateY(40vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+  transition: all 1.9s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.content-title {
+  font-size: 12vh;
+  line-height: 1.4;
+}
+
+.edanQuote
+{
+  padding: 2% 20% 2% 20%;
+  display: block;
+}
+
+.edanQuote__blockquote
+{
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.edanQuote__cite
+{
+  color: #EEE;
+  font-size: .6em;
+}
+
+.edanQuote__cite:before
+{
+    content: '';
+    display: block;
+    background-color: #EEE;
+    height: 2px;
+    margin: 1em auto 1em auto;
+    max-width: 300px;
+}
