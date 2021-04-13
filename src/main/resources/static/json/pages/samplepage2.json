@@ -1,0 +1,48 @@
+{
+  "css": ["/css/edan-slides.css"],
+  "js": ["/js/lodash.min.js", "/js/jquery-2.1.4.min.js"],
+  "htmlBefore": "",
+  "htmlAfter": "",
+  "pageTitle": "How The Camera Sees Color 2",
+  "pageTemplate": "page-slides.html",
+  "componentBefore": "<section class=\"background\"><div class=\"content-wrapper\">",
+  "componentAfter": "</div></section>",
+  "components": [
+    {
+      "componentType": "title",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "header",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject2"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject3"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject4"
+    },
+    {
+      "componentType": "quote",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject5"
+    },
+    {
+      "componentType": "resources",
+      "edanUrl": "sampleedanobject1"
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 {
   "css": ["/css/edan-templator.css"],
   "js": ["/js/edan-templator.js"],
-  "htmlBefore": "TEST BEFORE HTML",
-  "htmlAfter": "TEST AFTER HTML",
+  "pageTitle": "How The Camera Sees Color",
+  "htmlBefore": "",
+  "htmlAfter": "",
   "components": [
     {
       "componentType": "title",
