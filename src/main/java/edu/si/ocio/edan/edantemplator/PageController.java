@@ -47,7 +47,7 @@ public class PageController
                 options = (Map<?, ?>) components.get(i).get("options");
             }
 
-            Template template = handlebars.compile(componentType + ".html");
+            Template template = handlebars.compile("fragments/" + componentType + ".html");
 
             reader = Files.newBufferedReader(Paths.get("src/main/resources/static/json/edan/" + componentType + "/" + edanUrl + ".json"));
             Type type = new TypeToken<Map<String, Object>>(){}.getType();
@@ -75,7 +75,7 @@ public class PageController
           pageTemplateFile = (String) page.get("pageTemplate");
         }
 
-        Template pageTemplate = handlebars.compile(pageTemplateFile);
+        Template pageTemplate = handlebars.compile("pages/" + pageTemplateFile);
 
         return pageTemplate.apply(parameters);
     }
