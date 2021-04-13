@@ -1,0 +1,15 @@
+<head>
+  {{#each css}}
+    <link rel="stylesheet" href="{{this}}" />
+  {{/each}}
+  {{#each js}}
+    <script src="{{this}}"></script>
+  {{/each}}
+</head>
+<body>
+  <div class="edanPage">
+    <div class="edanPage__before">{{{ htmlBefore }}}</div>
+    <div class="edanPage__content">{{{ content }}}</div>
+    <div class="edanPage__after">{{{ htmlAfter }}}</div>
+  </div>
+</body>

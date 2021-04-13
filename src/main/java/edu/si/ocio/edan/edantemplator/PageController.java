@@ -63,7 +63,12 @@ public class PageController
         parameters.put("htmlBefore", page.get("htmlAfter"));
         parameters.put("content", html);
 
-        Template pageTemplate = handlebars.compile("page.html");
+        String pageTemplateFile = "page.html";
+        if (page.get("pageTemplate") instanceof String) {
+          pageTemplateFile = (String) page.get("pageTemplate");
+        }
+
+        Template pageTemplate = handlebars.compile(pageTemplateFile);
 
         return pageTemplate.apply(parameters);
     }

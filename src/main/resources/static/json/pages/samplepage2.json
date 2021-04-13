@@ -1,0 +1,125 @@
+{
+  "css": ["/css/edan-templator.css"],
+  "js": ["/js/edan-templator.js"],
+  "htmlBefore": "",
+  "htmlAfter": "",
+  "pageTemplate": "page-scroller.html",
+  "components": [
+    {
+      "componentType": "title",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "header",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "image",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject2"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject3"
+    },
+    {
+      "componentType": "image",
+      "edanUrl": "sampleedanobject2"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject4"
+    },
+    {
+      "componentType": "quote",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject5"
+    },
+    {
+      "componentType": "image",
+      "edanUrl": "sampleedanobject3"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject6"
+    },
+    {
+      "componentType": "image",
+      "edanUrl": "sampleedanobject4"
+    },
+    {
+      "componentType": "quote",
+      "edanUrl": "sampleedanobject2"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject7"
+    },
+    {
+      "componentType": "video",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject8"
+    },
+    {
+      "componentType": "filmstrip",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject9"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject10"
+    },
+    {
+      "componentType": "filmstrip",
+      "edanUrl": "sampleedanobject2"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject11"
+    },
+    {
+      "componentType": "image",
+      "edanUrl": "sampleedanobject5"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject12"
+    },
+    {
+      "componentType": "quote",
+      "edanUrl": "sampleedanobject3"
+    },
+    {
+      "componentType": "filmstrip",
+      "edanUrl": "sampleedanobject3"
+    },
+    {
+      "componentType": "paragraph",
+      "edanUrl": "sampleedanobject13"
+    },
+    {
+      "componentType": "link",
+      "edanUrl": "sampleedanobject1"
+    },
+    {
+      "componentType": "resources",
+      "edanUrl": "sampleedanobject1"
+    }
+  ]
+}
